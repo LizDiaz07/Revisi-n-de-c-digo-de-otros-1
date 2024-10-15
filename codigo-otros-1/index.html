@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- el contenido estaba en ingles, por lo que se pasó a español -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Este metadato era util para la compatibilidad de versiones antiguas de internet Explorer. Ahora en la actulidad, este metadato suele ser innecesario si no queremos tener compatibilidad con internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- se corrigió la ruta del arcchivo Style.css,  -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- se cambio el titulo por uno mas descriptivo -->
+  <title>API de Github</title>
+</head>
+
+<body>
+  <header>
+    <h1>API DE Github</h1>
+  </header>
+
+<!-- se agrega un formulario de busqueda -->
+  <main>
+    <section aria-labelledby="github-search">
+      <h2 id="github-search">Buscar usuario</h2>
+      <form id="github-form">
+        <fieldset>
+          <legend>Usuario a Buscar</legend>
+          <label for="username">Nombre del usuario</label>
+          <input type="text" id="username" placeholder="Introduce el nombre de usuario" required>
+          <input type="submit" value="Buscar">
+        </fieldset>
+      </form>
+    </section>
+    <section aria-labelledby="result-section">
+      <h2 id="result-section" >resultados</h2>
+      <article class="user-info"  aria-live="polite">
+        <p class="name">Nombre: <span></span> </p>
+        <p class="blog">Blog: <span></span> </p>
+        <!-- se agrega una etiqueta mas para la ubicacion del usuario -->
+        <p class="location">ubicacion: <span></span> </p>
+      </article>
+      <div class="error-message" style="color: red;" aria-live="assertive">
+    </section>
+
+    
+
+    </div>
+
+    
+
+<!-- se corrigió la ruta del arcchivo app.js -->
+  <script src="./assets/js/app.js"></script>
+</main>
+
+</body>
+</html>
